@@ -10,6 +10,7 @@ main()
   brew tap caskroom/cask
 
   for i in ${casks[@]} ; do
+    echo "Installing $i"
     brew cask install $i
   done
 }

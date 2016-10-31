@@ -10,6 +10,7 @@ main()
   print 'Installing brew formulae...'
 
   for i in ${formulae[@]} ; do
+    echo "Installing $i"
     brew install $i
   done
 }

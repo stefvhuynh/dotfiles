@@ -12,13 +12,7 @@ main()
     sudo -s "echo $zsh_path >> $shells_path"
   fi
 
-  if [[ -f "$HOME/.zshrc" ]] ; then
-    echo 'Moving current .zshrc to .zshrc.pre-dotfiles'
-    mv "$HOME/.zshrc" "$HOME/.zshrc.pre-dotfiles"
-  fi
-
-  echo 'Copying custom .zshrc to .zshrc'
-  cp "$root_path/.zshrc" "$HOME/.zshrc"
+  set_dotfile '.zshrc'
 
   bash "$bin_path/zsh/install_oh_my_zsh.sh"
 

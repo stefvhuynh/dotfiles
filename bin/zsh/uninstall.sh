@@ -13,15 +13,7 @@ main()
     sudo -s mv shells_temp $shells_path
   fi
 
-  if [[ -f "$HOME/.zshrc" ]] ; then
-    echo 'Moving .zshrc to .zshrc.dotfiles-{timestamp}'
-    mv "$HOME/.zshrc" "$HOME/.zshrc.dotfiles-$(date +%Y%m%d%H%M%S)"
-  fi
-
-  if [[ -f "$HOME/.zshrc.pre-dotfiles" ]] ; then
-    echo 'Moving .zshrc.pre-dotfiles back to .zshrc'
-    mv "$HOME/.zshrc.pre-dotfiles" "$HOME/.zshrc"
-  fi
+  reset_dotfile '.zshrc'
 
   bash "$bin_path/zsh/uninstall_oh_my_zsh.sh"
 

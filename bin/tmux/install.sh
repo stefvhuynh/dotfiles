@@ -8,3 +8,5 @@ main()
   print 'Setting up tumx...'
   set_dotfile '.tmux.conf'
 }
+
+main

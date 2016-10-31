@@ -1,8 +1,8 @@
 #!/bin/sh
 
 . ../utils.sh
+. ../vars.sh
 
-brew_install_url='https://raw.githubusercontent.com/Homebrew/install/master/install'
 
 main()
 {

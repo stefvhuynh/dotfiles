@@ -40,3 +40,10 @@ simulators. Additionally, you can use automator to run AppleScripts for more
 complex tasks, which you can then run with a global hotkey. An obvious candidate
 for a more complex task would be to launch all applications needed for
 development and configure them as needed (you can even run terminal commands).
+
+Setup
+-----
+To run the install scripts, run `bash bin/install.sh`. You will need to run it
+from this project's root directory. You can run `sudo -s 'bash bin/install.sh`
+to avoid password prompts during installation. Additionally, you can run any of
+the scripts inside `bin/` by themselves if you want.

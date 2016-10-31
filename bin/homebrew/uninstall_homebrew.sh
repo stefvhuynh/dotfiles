@@ -1,8 +1,7 @@
 #!/bin/sh
 
 . ../utils.sh
-
-brew_uninstall_url='https://raw.githubusercontent.com/Homebrew/install/master/uninstall'
+. ../vars.sh
 
 main()
 {

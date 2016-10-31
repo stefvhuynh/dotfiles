@@ -2,8 +2,8 @@
 
 . ../utils.sh
 
-# Yarn installs node for you.
-formulae=(zsh git tmux vim yarn)
+# Yarn installs node for you. Mercurial is necessary for vim.
+formulae=(zsh git tmux mercurial vim yarn)
 
 main()
 {

@@ -8,5 +8,5 @@ zsh_path='/usr/local/bin/zsh'
 shells_path='/etc/shells'
 default_bash_path='/bin/bash'
 oh_my_zsh_install_url='https://github.com/robbyrussell/oh-my-zsh.git'
-vundle_install_url="https://github.com/gmarik/Vundle.vim.git"
+vundle_install_url="https://github.com/VundleVim/Vundle.vim.git"
 vundle_path=".vim/bundle/Vundle.vim"

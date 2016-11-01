@@ -1,8 +1,7 @@
 # zsh configuration
 
-export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="avit"
-plugins=(git)
+plugins=(git npm)
 
+export ZSH="$HOME/.oh-my-zsh"
 source "$ZSH/oh-my-zsh.sh"

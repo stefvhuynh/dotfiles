@@ -40,9 +40,6 @@ set swapfile
 set directory=$HOME/.vim/tmp
 set backupdir=$HOME/.vim/tmp
 
-" Map a more convenient leader key.
-let mapleader=' '
-
 " Highlight search results.
 set hlsearch incsearch
 
@@ -95,6 +92,7 @@ let g:jsx_ext_required=0
 let delimitMate_expand_space=1
 let delimitMate_expand_cr=1
 
+
 " Plugin mappings
 " ---------------
 
@@ -106,8 +104,17 @@ nmap <leader>/ <leader>ci
 vmap <leader>/ <leader>ci
 
 
+" Auto commands
+" -------------
+
+" Auto-save on various events.
+autocmd TextChanged,InsertLeave * :wa
+
 " Key mappings
 " ------------
+
+" Map a more convenient leader key.
+let mapleader=' '
 
 " Use ctrl and directional keys to navigate screens.
 nnoremap <c-j> <c-w>j

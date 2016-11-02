@@ -73,6 +73,7 @@ set number
 set colorcolumn=81
 
 " Make trailing spaces visible as a dot.
+set list
 set listchars=trail:·
 
 " Make the background dark for colorschemes that require it.
@@ -92,6 +93,9 @@ let g:auto_save=1
 " Show dotfiles in NERDTree.
 let g:NERDTreeShowHidden=1
 
+" Add space after comment character.
+let g:NERDSpaceDelims=1
+
 " Do not require .jsx extension to highlight jsx.
 let g:jsx_ext_required=0
 
@@ -105,10 +109,6 @@ let g:delimitMate_expand_cr=1
 
 " Open NERDTree faster.
 nnoremap \ :NERDTreeTabsToggle<cr>
-
-" Faster NERDCommenter comment toggle in normal and visual modes.
-nmap <leader>/ <leader>ci
-vmap <leader>/ <leader>ci
 
 
 " Key mappings
@@ -137,3 +137,6 @@ nnoremap <cr> o<esc>
 
 " Faster escaping out of insert mode.
 inoremap jk <esc>
+
+" Search for the word the cursor is over in current file.
+nnoremap <leader>/ ebyw/<c-r>"<bs><cr>

@@ -10,7 +10,9 @@ Installation
 To run the install scripts, run `bash bin/install.sh`. You will need to run it
 from this project's root directory. You can run `sudo -s 'bash bin/install.sh`
 to avoid password prompts during installation. Additionally, you can run any of
-the scripts inside `bin/` by themselves if you want.
+the scripts inside `bin/` by themselves if you want. You can also uninstall
+everything by running `bash bin/uninstall.sh` or only uninstall the pieces you
+don't want by running the proper scripts.
 
 CLI Tools
 ---------

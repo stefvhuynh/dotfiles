@@ -15,6 +15,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin '907th/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -55,6 +56,9 @@ set softtabstop=2
 " Add space between the cursor and the bottom of the screen.
 set scrolloff=2
 
+" Keep time interval short for git-gutter.
+set updatetime=250
+
 
 " Visual settings
 " ---------------
@@ -82,15 +86,18 @@ colorscheme hybrid
 " Plugin settings
 " ---------------
 
+" Enable auto-save.
+let g:auto_save=1
+
 " Show dotfiles in NERDTree.
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=1
 
 " Do not require .jsx extension to highlight jsx.
 let g:jsx_ext_required=0
 
 " Expand spaces and returns inside delimiters.
-let delimitMate_expand_space=1
-let delimitMate_expand_cr=1
+let g:delimitMate_expand_space=1
+let g:delimitMate_expand_cr=1
 
 
 " Plugin mappings
@@ -103,12 +110,6 @@ nnoremap \ :NERDTreeTabsToggle<cr>
 nmap <leader>/ <leader>ci
 vmap <leader>/ <leader>ci
 
-
-" Auto commands
-" -------------
-
-" Auto-save on various events.
-autocmd TextChanged,InsertLeave * :wa
 
 " Key mappings
 " ------------

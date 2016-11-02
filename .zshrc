@@ -2,7 +2,7 @@
 
 editor='/usr/local/bin/vim'
 
-# avit, aussiegeek, bureau, candy
+# eg. avit, aussiegeek, bureau, candy
 ZSH_THEME='candy'
 plugins=(git npm)
 

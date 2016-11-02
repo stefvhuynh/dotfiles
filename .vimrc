@@ -3,6 +3,7 @@
 " Do not use vi default settings.
 set nocompatible
 
+
 " Vundle setup
 " ------------
 
@@ -15,10 +16,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
+Plugin 'Raimondi/delimitMate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -26,6 +30,7 @@ Plugin 'mxw/vim-jsx'
 " Finish vundle.
 call vundle#end()
 filetype plugin indent on
+
 
 " General settings
 " ----------------
@@ -41,17 +46,17 @@ let mapleader=' '
 " Highlight search results.
 set hlsearch incsearch
 
+" Make backspace behave normally.
+set backspace=2
+
 " Use spaces for tabs.
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
-" Make backspace behave normally.
-set backspace=2
-
-" Show dotfiles in NERDTree.
-let NERDTreeShowHidden=1
+" Add space between the cursor and the bottom of the screen.
+set scrolloff=2
 
 " Visual settings
 " ---------------
@@ -62,12 +67,43 @@ syntax on
 " Turn on line numbers.
 set number
 
+" Set vertical line for max line length.
+set colorcolumn=81
+
+" Make trailing spaces visible as a dot.
+set listchars=trail:·
+
+" Make the background dark for colorschemes that require it.
+set background=dark
+
 " Set the colorscheme.
-" Tomorrow-Night, sorcerer, railscasts
-colorscheme sorcerer
+" eg. Tomorrow-Night, hybrid, sorcerer, kolor, railscasts
+colorscheme hybrid
+
+
+" Plugin settings
+" ---------------
+
+" Show dotfiles in NERDTree.
+let NERDTreeShowHidden=1
 
 " Do not require .jsx extension to highlight jsx.
 let g:jsx_ext_required=0
+
+" Expand spaces and returns inside delimiters.
+let delimitMate_expand_space=1
+let delimitMate_expand_cr=1
+
+" Plugin mappings
+" ---------------
+
+" Open NERDTree faster.
+nnoremap \ :NERDTreeTabsToggle<cr>
+
+" Faster NERDCommenter comment toggle in normal and visual modes.
+nmap <leader>/ <leader>ci
+vmap <leader>/ <leader>ci
+
 
 " Key mappings
 " ------------
@@ -87,9 +123,8 @@ nnoremap <leader>t :tabnew<cr>
 " Faster save.
 nnoremap <c-w> :w<cr>
 
-" Open NERDTree faster.
-nnoremap \ :NERDTree<cr>
+" Add newlines in normal mode without going into insert mode.
+nnoremap <cr> o<esc>
 
-" Faster NERDCommenter comment toggle in normal and visual modes.
-nmap <leader>/ <leader>ci
-vmap <leader>/ <leader>ci
+" Faster escaping out of insert mode.
+inoremap jk <esc>

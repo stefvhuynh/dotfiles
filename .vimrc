@@ -58,6 +58,7 @@ set softtabstop=2
 " Add space between the cursor and the bottom of the screen.
 set scrolloff=2
 
+
 " Visual settings
 " ---------------
 

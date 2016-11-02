@@ -13,7 +13,7 @@ main()
   mkdir "$HOME/.vim/tmp"
 
   echo 'Cloning vundle'
-  git clone --depth=1 $vundle_url "$HOME/$vundle_path"
+  git clone --depth=1 $vundle_install_url "$HOME/$vundle_path"
 
   echo 'Installing vim plugins'
   vim +PluginInstall +qa

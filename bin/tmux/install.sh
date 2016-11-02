@@ -9,6 +9,8 @@ main()
   set_dotfile '.tmux.conf'
 
   bash "$bin_path/tmux/install_tpm.sh"
+
+  echo 'Sourcing .tmux.conf'
   tmux source "$HOME/.tmux.conf"
 }
 

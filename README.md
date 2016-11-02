@@ -14,6 +14,7 @@ CLI Tools
 * vim
 * node
 * yarn
+* ack
 
 Apps
 ----

@@ -139,4 +139,4 @@ nnoremap <cr> o<esc>
 inoremap jk <esc>
 
 " Search for the word the cursor is over in current file.
-nnoremap <leader>/ ebyw/<c-r>"<bs><cr>
+nnoremap <leader>/ ebyw/<c-r>"<cr>

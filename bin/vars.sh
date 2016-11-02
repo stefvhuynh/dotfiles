@@ -10,3 +10,5 @@ default_bash_path='/bin/bash'
 oh_my_zsh_install_url='https://github.com/robbyrussell/oh-my-zsh.git'
 vundle_install_url="https://github.com/VundleVim/Vundle.vim.git"
 vundle_path=".vim/bundle/Vundle.vim"
+tpm_install_url='https://github.com/tmux-plugins/tpm.git'
+tpm_path=".tmux/plugins/tpm"

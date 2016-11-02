@@ -33,3 +33,23 @@ reset_dotfile()
     mv "$HOME/${1}.pre-dotfiles" "$HOME/$1"
   fi
 }
+
+mv_dot_dir()
+{
+  if [[ -d "$HOME/$1" ]] ; then
+    echo "Moving $1 to ${1}.pre-dotfiles"
+    mv "$HOME/$1" "$HOME/${1}.pre-dotfiles"
+  fi
+}
+
+reset_dot_dir()
+{
+  if [[ -d "$HOME/$1" ]] ; then
+    echo "Moving $1 to ${1}.dotfiles-{timestamp}"
+    mv "$HOME/$1" "$HOME/${1}.dotfiles-$(date +%Y%m%d%H%M%S)"
+  fi
+
+  if [[ -d "$HOME/${1}.pre-dotfiles" ]] ; then
+    mv "$HOME/${1}.pre-dotfiles" "$HOME/$1"
+  fi
+}

@@ -7,6 +7,9 @@ main()
 {
   print 'Setting up tumx...'
   set_dotfile '.tmux.conf'
+
+  bash "$bin_path/tmux/install_tpm.sh"
+  tmux source "$HOME/.tmux.conf"
 }
 
 main

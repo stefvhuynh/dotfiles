@@ -5,8 +5,8 @@
 
 main()
 {
-  print 'Uninstalling vundle...'
-  reset_dot_dir '.vim'
+  print 'Uninstalling tpm...'
+  reset_dot_dir '.tmux'
 }
 
 main

@@ -104,6 +104,8 @@ let g:jsx_ext_required=0
 let g:delimitMate_expand_space=1
 let g:delimitMate_expand_cr=1
 
+" Pad curly braces with a space when argwrap-ing.
+let g:argwrap_padded_braces='{'
 
 " Plugin mappings
 " ---------------
@@ -111,7 +113,7 @@ let g:delimitMate_expand_cr=1
 " Open NERDTree faster.
 nnoremap \ :NERDTreeTabsToggle<cr>
 
-" Faster arg-wrap.
+" Faster argwrap.
 nnoremap <leader>w :ArgWrap<cr>
 
 

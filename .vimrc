@@ -137,6 +137,3 @@ nnoremap <cr> o<esc>
 
 " Faster escaping out of insert mode.
 inoremap jk <esc>
-
-" Search for the word the cursor is over in current file.
-nnoremap <leader>/ ebyw/<c-r>"<cr>

@@ -19,14 +19,15 @@ Plugin '907th/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
-Plugin 'Raimondi/delimitMate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'FooSoft/vim-argwrap'
 
 " Finish vundle.
 call vundle#end()
@@ -109,6 +110,9 @@ let g:delimitMate_expand_cr=1
 
 " Open NERDTree faster.
 nnoremap \ :NERDTreeTabsToggle<cr>
+
+" Faster arg-wrap.
+nnoremap <leader>w :ArgWrap<cr>
 
 
 " Key mappings

@@ -25,9 +25,11 @@ Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
 Plugin 'FooSoft/vim-argwrap'
+Plugin 'terryma/vim-expand-region'
 
 " Finish vundle.
 call vundle#end()
@@ -116,6 +118,8 @@ nnoremap \ :NERDTreeTabsToggle<cr>
 " Faster argwrap.
 nnoremap <leader>w :ArgWrap<cr>
 
+vmap v <Plug>(expand_region_expand)
+vmap f <Plug>(expand_region_shrink)
 
 " Key mappings
 " ------------
@@ -135,11 +139,12 @@ nnoremap <silent> <esc> :nohlsearch<cr>
 " Open tabs faster.
 nnoremap <leader>t :tabnew<cr>
 
-" Faster save.
-nnoremap <c-w> :w<cr>
-
 " Add newlines in normal mode without going into insert mode.
 nnoremap <cr> o<esc>
 
 " Faster escaping out of insert mode.
 inoremap jk <esc>
+
+" Remap auto-complete selection to more natural keys.
+inoremap <c-j> <c-n>
+inoremap <c-k> <c-p>

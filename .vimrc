@@ -39,6 +39,9 @@ filetype plugin indent on
 " General settings
 " ----------------
 
+" Map a more convenient leader key.
+let mapleader=' '
+
 " Put swap files in a temporary directory in home or root.
 set swapfile
 set directory=$HOME/.vim/tmp
@@ -109,6 +112,7 @@ let g:delimitMate_expand_cr=1
 " Pad curly braces with a space when argwrap-ing.
 let g:argwrap_padded_braces='{'
 
+
 " Plugin mappings
 " ---------------
 
@@ -121,11 +125,9 @@ nnoremap <leader>w :ArgWrap<cr>
 vmap v <Plug>(expand_region_expand)
 vmap f <Plug>(expand_region_shrink)
 
+
 " Key mappings
 " ------------
-
-" Map a more convenient leader key.
-let mapleader=' '
 
 " Use ctrl and directional keys to navigate screens.
 nnoremap <c-j> <c-w>j
@@ -145,6 +147,9 @@ nnoremap <cr> o<esc>
 " Faster escaping out of insert mode.
 inoremap jk <esc>
 
-" Remap auto-complete selection to more natural keys.
+" Remap auto-complete selection to more natural keys and unbind the original
+" mappings.
 inoremap <c-j> <c-n>
 inoremap <c-k> <c-p>
+inoremap <c-n> <Nop>
+inoremap <c-p> <Nop>

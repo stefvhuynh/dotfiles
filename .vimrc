@@ -13,7 +13,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin '907th/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
@@ -112,6 +112,9 @@ let g:delimitMate_expand_cr=1
 " Pad curly braces with a space when argwrap-ing.
 let g:argwrap_padded_braces='{'
 
+" Change CtrlP mapping.
+let g:ctrlp_map='<leader>p'
+
 
 " Plugin mappings
 " ---------------
@@ -122,8 +125,13 @@ nnoremap \ :NERDTreeTabsToggle<cr>
 " Faster argwrap.
 nnoremap <leader>w :ArgWrap<cr>
 
+" More convenient selection expand and shrink.
 vmap v <Plug>(expand_region_expand)
 vmap f <Plug>(expand_region_shrink)
+
+" Faster fugitive commands.
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gc :Gcommit<cr>
 
 
 " Key mappings
@@ -138,8 +146,12 @@ nnoremap <c-l> <c-w>l
 " Remove highlight on escape key press.
 nnoremap <silent> <esc> :nohlsearch<cr>
 
-" Open tabs faster.
-nnoremap <leader>t :tabnew<cr>
+" tmux-like tab navigation.
+nnoremap <c-n> gt
+nnoremap <c-p> gT
+nnoremap <c-c> :tabnew<cr>
+nnoremap gt <Nop>
+nnoremap gT <Nop>
 
 " Add newlines in normal mode without going into insert mode.
 nnoremap <cr> o<esc>

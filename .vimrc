@@ -131,7 +131,8 @@ vmap f <Plug>(expand_region_shrink)
 
 " Faster fugitive commands.
 nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gd :Gdiff<cr>
 
 
 " Key mappings

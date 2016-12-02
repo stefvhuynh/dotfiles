@@ -2,7 +2,17 @@
 
 . ../utils.sh
 
-casks=(iterm2 google-chrome dropbox 1password slack android-studio flux spotify)
+casks=(
+  iterm2
+  google-chrome
+  google-drive
+  1password
+  dropbox
+  slack
+  android-studio
+  flux
+  spotify
+)
 
 main()
 {

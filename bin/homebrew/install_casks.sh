@@ -7,7 +7,6 @@ casks=(
   google-chrome
   google-drive
   1password
-  dropbox
   slack
   android-studio
   flux

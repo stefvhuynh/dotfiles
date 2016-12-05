@@ -6,6 +6,7 @@ casks=(
   iterm2
   google-chrome
   google-drive
+  backblaze
   1password
   slack
   android-studio

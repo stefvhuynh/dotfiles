@@ -11,7 +11,6 @@ casks=(
   slack
   android-studio
   flux
-  spotify
 )
 
 main()

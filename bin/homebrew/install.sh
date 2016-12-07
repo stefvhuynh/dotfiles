@@ -1,7 +1,7 @@
 #!/bin/sh
 
-. ../utils.sh
-. ../vars.sh
+. ./bin/utils.sh
+. ./bin/vars.sh
 
 
 main()

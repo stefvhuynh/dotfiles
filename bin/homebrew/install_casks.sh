@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ../utils.sh
+. ./bin/utils.sh
 
 casks=(
   iterm2

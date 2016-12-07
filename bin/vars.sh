@@ -13,3 +13,4 @@ vundle_path=".vim/bundle/Vundle.vim"
 tpm_install_url='https://github.com/tmux-plugins/tpm.git'
 tpm_path=".tmux/plugins/tpm"
 tpm_install_script_path=".tmux/plugins/tpm/scripts/install_plugins.sh"
+xcode_command_line_tools_path="/Library/Developer/CommandLineTools"

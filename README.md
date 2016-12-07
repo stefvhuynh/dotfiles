@@ -16,6 +16,7 @@ don't want by running the proper scripts.
 
 CLI Tools
 ---------
+* xcode commmand line tools
 * homebrew
 * zsh
 * git

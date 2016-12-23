@@ -25,6 +25,8 @@ CLI Tools
 * node
 * yarn
 * ack
+* mongodb
+* heroku
 
 Apps
 ----

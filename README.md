@@ -33,12 +33,13 @@ Apps
 ----
 * iTerm2
 * Chrome
-* Dropbox
+* Google Drive
+* Backblaze
 * 1Password
 * Slack
 * Android Studio
 * Flux
-* Spotify
+* Screenhero
 
 Apps That Need to Be Installed Manually
 ---------------------------------------

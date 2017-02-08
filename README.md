@@ -24,6 +24,7 @@ CLI Tools
 * vim
 * node
 * yarn
+* n
 * ack
 * mongodb
 * heroku

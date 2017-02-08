@@ -11,6 +11,7 @@ casks=(
   slack
   android-studio
   flux
+  screenhero
 )
 
 main()

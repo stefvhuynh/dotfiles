@@ -3,7 +3,7 @@
 . ./bin/utils.sh
 
 # Yarn installs node for you. Mercurial is necessary for vim.
-formulae=(zsh git tmux mercurial vim yarn ack mongodb heroku screenhero)
+formulae=(zsh git tmux mercurial vim yarn n ack mongodb heroku)
 
 main()
 {

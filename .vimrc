@@ -22,14 +22,17 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
 Plugin 'FooSoft/vim-argwrap'
 Plugin 'terryma/vim-expand-region'
+Plugin 'flazz/vim-colorschemes'
+
+" Syntax highlighting support.
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
 
 " Finish vundle.
 call vundle#end()

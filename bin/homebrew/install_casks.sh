@@ -12,6 +12,7 @@ casks=(
   android-studio
   flux
   firefox
+  screenhero
 )
 
 main()

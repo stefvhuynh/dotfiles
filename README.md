@@ -28,6 +28,7 @@ CLI Tools
 * ack
 * mongodb
 * heroku
+* java
 
 Apps
 ----

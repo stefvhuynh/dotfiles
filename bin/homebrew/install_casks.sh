@@ -13,6 +13,7 @@ casks=(
   flux
   firefox
   screenhero
+  java
 )
 
 main()

@@ -1,0 +1,85 @@
+{
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block-outline",
+    "editor.parameterHints.cycle": true,
+    "editor.parameterHints.enabled": false,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Monaco",
+
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.openSideBySideDirection": "down",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+
+    "update.channel": "manual",
+    "update.mode": "manual",
+
+    "breadcrumbs.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+
+    // Extensions
+    "rest-client.previewColumn": "current",
+    "rest-client.timeoutinmilliseconds": 60000,
+
+    "vim.hlsearch": true,
+    "vim.ignorecase": false,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "k"],
+            "after": ["<esc>"]
+        }
+    ],
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<enter>"],
+            "after": ["A", "<enter>", "<esc>"],
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ],
+        }
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+
+    "macros": {
+        "openAndKeep": [
+            "list.select",
+            "workbench.action.keepEditor"
+        ],
+        "toggleEditorGroup1": [
+            "workbench.action.focusFirstEditorGroup",
+            "workbench.action.minimizeOtherEditors"
+        ],
+        "toggleEditorGroup2": [
+            "workbench.action.focusSecondEditorGroup",
+            "workbench.action.minimizeOtherEditors"
+        ],
+        "toggleEditorGroup3": [
+            "workbench.action.focusThirdEditorGroup",
+            "workbench.action.minimizeOtherEditors"
+        ],
+    },
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.rendererType": "dom",
+}

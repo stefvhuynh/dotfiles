@@ -40,21 +40,23 @@ Apps
 * Slack
 * Android Studio
 * Flux
-* Screenhero
+* Visual Studio Code
 
 Apps That Need to Be Installed Manually
 ---------------------------------------
 * Xcode/Instruments
 
-Pre-installed Tools
--------------------
-You can create Automator workflows to launch applications or bring them to the
-forefront. You can then assign the workflow to a global hotkey. This is useful
-for quickly switching between apps you are using for development. An obvious
-candidate would be to switch focus between iTerm2, Chrome, and mobile device
-simulators. Additionally, you can use Automator to run AppleScripts for more
-complex tasks, which you can then run with a global hotkey. An obvious candidate
-for a more complex task would be to launch all applications needed for
-development and configure them as needed (you can even run terminal commands).
-Xcode comes with Instruments which you can use to monitor activity on your
-machine, including file system changes and cpu usage and much more.
+Visual Studio Code
+------------------
+Copy `.vscode/settings.json` and `.vscode/keybindings.json` to
+`~/Library/Application Support/Code/User`
+
+In the app, install the following extensions:
+
+* Alphabetical Sorter
+* ESLint
+* GitLens
+* macros
+* npm Intellisense
+* REST Client
+* Vim

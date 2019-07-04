@@ -3,17 +3,17 @@
 . ./bin/utils.sh
 
 casks=(
-  iterm2
+  1password
+  android-studio
+  backblaze
+  firefox
+  flux
   google-chrome
   google-drive
-  backblaze
-  1password
-  slack
-  android-studio
-  flux
-  firefox
-  screenhero
+  iterm2
   java
+  slack
+  visual-studio-code
 )
 
 main()

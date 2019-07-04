@@ -1,0 +1,147 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "macros.openAndKeep",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+9",
+    "command": "workbench.action.evenEditorWidths"
+  },
+  {
+    "key": "cmd+1",
+    "command": "macros.toggleEditorGroup1"
+  },
+  {
+    "key": "cmd+2",
+    "command": "macros.toggleEditorGroup2"
+  },
+  {
+    "key": "cmd+3",
+    "command": "macros.toggleEditorGroup3"
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.action.toggleEditorGroupLayout"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+s cmd+j",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "cmd+s cmd+h",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "cmd+s cmd+l",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "cmd+s cmd+k",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+s",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  }
+]

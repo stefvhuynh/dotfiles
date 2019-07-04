@@ -49,7 +49,7 @@ Apps That Need to Be Installed Manually
 Visual Studio Code
 ------------------
 Copy `.vscode/settings.json` and `.vscode/keybindings.json` to
-`~/Library/Application Support/Code/User`
+`~/Library/Application Support/Code/User`.
 
 In the app, install the following extensions:
 
